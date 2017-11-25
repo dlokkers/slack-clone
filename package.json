@@ -1,0 +1,20 @@
+{
+  "name": "rtsupport",
+  "version": "1.0.0",
+  "description": "Realtime support frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dennis Lokkers",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^5.3.3",
+    "react": "^16.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "react-dom": "^16.1.1"
+  }
+}
