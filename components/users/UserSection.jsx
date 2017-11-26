@@ -5,15 +5,17 @@ import UserForm from './UserForm.jsx';
 
 class UserSection extends Component{
 	render(){
-		<div className='support panel panel-primary'>
-			<div className='panel-heading'>
-				<strong>Users</strong>
+		return(
+			<div className='support panel panel-primary'>
+				<div className='panel-heading'>
+					<strong>Users</strong>
+				</div>
+				<div className='panel-body users'>
+					<UserList {...this.props} />
+					<UserForm {...this.props} />
+				</div>
 			</div>
-			<div className='panel-body users'>
-				<UserList {...this.props} />
-				<UserForm {...this.props} />
-			</div>
-		</div>
+		)
 	}
 }
 

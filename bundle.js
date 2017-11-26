@@ -19568,9 +19568,80 @@ module.exports = exports['default'];
 
 /***/ }),
 /* 38 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: /home/dlokkers/programming/git/rtsupport/components/users/UserForm.jsx: Unexpected token (29:8)\n\u001b[0m\nUserForm\u001b[1m.\u001b[22mpropTypes \u001b[1m=\u001b[22m \u001b[32m{\u001b[39m\n\taddUser\u001b[1m:\u001b[22m PropTypes\u001b[1m.\u001b[22mfunc\u001b[1m.\u001b[22misRequired\n\u001b[32m}\u001b[39m\n\n\u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m UserForm\u001b[0m\n    at Parser.pp.raise (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/location.js:24:13)\n    at Parser.pp.unexpected (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/util.js:82:8)\n    at Parser.pp.expect (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/util.js:76:33)\n    at Parser.pp.jsxParseExpressionContainer (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/jsx/index.js:301:8)\n    at Parser.pp.jsxParseElementAt (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/jsx/index.js:370:30)\n    at Parser.pp.jsxParseElementAt (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/jsx/index.js:362:30)\n    at Parser.pp.jsxParseElement (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/jsx/index.js:398:15)\n    at Parser.parseExprAtom (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/jsx/index.js:410:21)\n    at Parser.pp.parseExprSubscripts (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:236:19)\n    at Parser.pp.parseMaybeUnary (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:217:19)\n    at Parser.pp.parseExprOps (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:163:19)\n    at Parser.pp.parseMaybeConditional (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:145:19)\n    at Parser.pp.parseMaybeAssign (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:112:19)\n    at Parser.pp.parseParenAndDistinguishExpression (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:483:26)\n    at Parser.parseParenAndDistinguishExpression (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/flow.js:978:26)\n    at Parser.pp.parseExprAtom (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:378:19)\n    at Parser.parseExprAtom (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/jsx/index.js:412:22)\n    at Parser.pp.parseExprSubscripts (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:236:19)\n    at Parser.pp.parseMaybeUnary (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:217:19)\n    at Parser.pp.parseExprOps (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:163:19)\n    at Parser.pp.parseMaybeConditional (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:145:19)\n    at Parser.pp.parseMaybeAssign (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:112:19)\n    at Parser.pp.parseExpression (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:79:19)\n    at Parser.pp.parseReturnStatement (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/statement.js:287:26)\n    at Parser.pp.parseStatement (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/statement.js:89:19)\n    at Parser.parseStatement (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/flow.js:655:22)\n    at Parser.pp.parseBlock (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/statement.js:442:21)\n    at Parser.pp.parseFunctionBody (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:747:22)\n    at Parser.parseFunctionBody (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/plugins/flow.js:643:20)\n    at Parser.pp.parseMethod (/home/dlokkers/programming/git/rtsupport/node_modules/babylon/lib/parser/expression.js:717:8)");
+"use strict";
+
+
+Object.defineProperty(exports, '__esModule', {
+	value: true
+});
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(3);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var UserForm = (function (_Component) {
+	_inherits(UserForm, _Component);
+
+	function UserForm() {
+		_classCallCheck(this, UserForm);
+
+		_get(Object.getPrototypeOf(UserForm.prototype), 'constructor', this).apply(this, arguments);
+	}
+
+	_createClass(UserForm, [{
+		key: 'onSubmit',
+		value: function onSubmit(e) {
+			e.preventDefault();
+			var node = this.refs.user;
+			var userName = node.value;
+			this.props.addUser(userName);
+			node.value = '';
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2['default'].createElement(
+				'form',
+				{ onSubmit: this.onSubmit.bind(this) },
+				_react2['default'].createElement(
+					'div',
+					{ className: 'form-group' },
+					_react2['default'].createElement('input', {
+						className: 'form-control',
+						placeholder: 'Add User',
+						type: 'text',
+						ref: 'user'
+					})
+				)
+			);
+		}
+	}]);
+
+	return UserForm;
+})(_react.Component);
+
+UserForm.propTypes = {
+	addUser: _propTypes2['default'].func.isRequired
+};
+
+exports['default'] = UserForm;
+module.exports = exports['default'];
 
 /***/ })
 /******/ ]);
