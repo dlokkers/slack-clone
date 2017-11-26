@@ -20,7 +20,7 @@ class UserForm extends Component{
 						ref='user'
 					/>
 				</div>
-			<form>
+			</form>
 		)
 	}
 }
