@@ -4,15 +4,17 @@ import User from './User.jsx';
 
 class UserList extends Component{
 	render(){
-		<ul>{
-			this.props.users.map( user => {
-				return <User
-					key={user.id}	
-					user={user}
-					{...this.props}
-				/>
-			})
-		}</ul>
+		return(
+			<ul>{
+				this.props.users.map( user => {
+					return <User
+						key={user.id}	
+						user={user}
+						{...this.props}
+					/>
+				})
+			}</ul>
+		)
 	}
 }
 

@@ -19376,7 +19376,7 @@ var UserSection = (function (_Component) {
 	_createClass(UserSection, [{
 		key: 'render',
 		value: function render() {
-			_react2['default'].createElement(
+			return _react2['default'].createElement(
 				'div',
 				{ className: 'support panel panel-primary' },
 				_react2['default'].createElement(
@@ -19460,7 +19460,7 @@ var UserList = (function (_Component) {
 		value: function render() {
 			var _this = this;
 
-			_react2['default'].createElement(
+			return _react2['default'].createElement(
 				'ul',
 				null,
 				this.props.users.map(function (user) {
