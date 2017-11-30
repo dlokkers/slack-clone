@@ -5,10 +5,11 @@ import MessageList from './MessageList.jsx';
 
 class MessageSection extends Component {
 	render(){
+		let {activeChannel} = this.props;
 		return(
-			<div className='support panel panel-primary'>
+			<div className='messages-container panel panel-default'>
 				<div className='panel-heading'>
-					<strong>Messages</strong>
+					<strong>{activeChannel.name}</strong>
 				</div>
 				<div className='panel-body messages'>
 					<MessageList {...this.props} />
@@ -21,9 +22,8 @@ class MessageSection extends Component {
 
 MessageSection.propTypes = {
 	messages: PropTypes.array.isRequired,
-	setMessage: PropTypes.func.isRequired,
 	addMessage: PropTypes.func.isRequired,
-	activeMessage: PropTypes.object.isRequired
+	activeChannel: PropTypes.object.isRequired
 }
 
 export default MessageSection

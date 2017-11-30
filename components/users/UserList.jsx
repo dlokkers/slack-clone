@@ -10,7 +10,6 @@ class UserList extends Component{
 					return <User
 						key={user.id}	
 						user={user}
-						{...this.props}
 					/>
 				})
 			}</ul>
@@ -21,8 +20,6 @@ class UserList extends Component{
 
 UserList.PropTypes = {
 	users: PropTypes.array.isRequired,
-	setUser: PropTypes.func.isRequired,
-	activeUser: PropTypes.object.isRequired
 }
 
 export default UserList

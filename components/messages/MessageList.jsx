@@ -6,12 +6,12 @@ class MessageList extends Component{
 	render(){
 		return(
 			<ul>{
-				this.props.messages.map( chan =>{
-					return <Message
-						key={chan.id}
-						message={chan}
-						{...this.props}
-				/>
+				this.props.messages.map( message =>{
+					return (<Message
+						key={message.id}
+						message={message}
+					
+				/>)
 				})
 			}</ul>
 		)
@@ -20,8 +20,6 @@ class MessageList extends Component{
 
 MessageList.propTypes = {
 	messages: PropTypes.array.isRequired,
-	setMessage: PropTypes.func.isRequired,
-	activeMessage: PropTypes.object.isRequired
 }
 
 export default MessageList 

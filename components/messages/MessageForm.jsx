@@ -10,15 +10,20 @@ class MessageForm extends Component{
 		node.value = '';
 	}
 	render(){
+		let input;
+		if(this.props.activeChannel.id !== undefined){
+			input= (
+				<input
+					ref='message'
+					type='text'
+					className='form-control'
+					placeholder='Add Message...' />
+			)
+		}
 		return(
 			<form onSubmit={this.onSubmit.bind(this)}>
 				<div className='form-group'>
-					<input
-						className='form-control'
-						placeholder='Add Message'
-						type='text'
-						ref='message'
-					/>
+					{input}
 				</div>
 			</form>
 		)
@@ -26,7 +31,8 @@ class MessageForm extends Component{
 }
 
 MessageForm.propTypes = {
-	addMessage: PropTypes.func.isRequired
+	addMessage: PropTypes.func.isRequired,
+	activeChannel: PropTypes.object.isRequired
 }
 
 export default MessageForm

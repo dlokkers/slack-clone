@@ -7,41 +7,41 @@ class App extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
+			activeChannel: {},
 			channels: [],
 			users: [],
-			messages: []
+			messages: [],
 		};
 	}
+
+	// Channel functions
 	addChannel(name){
 		let {channels} = this.state;
 		channels.push({id: channels.length, name});
 		this.setState({channels});
 		// TODO: Send to server
 	}
-	addMessage(name){
-		let {messages} = this.state;
-		messages.push({id: messages.length, name});
-		this.setState({messages});
-		// TODO: Send to server
+	setChannel(activeChannel){
+		this.setState({activeChannel});
+		// TODO: Get Channels Messages	
 	}
-	addUser(name){
+
+	// User functions
+	setUserName(name){
 		let {users} = this.state;
 		users.push({id: users.length, name});
 		this.setState({users});
 		// TODO: Send to server
 	}
 
-	setChannel(activeChannel){
-		this.setState({activeChannel});
-		// TODO: Get Channels Messages	
-	}
-	setMessage(activeMessage){
-		this.setState({activeMessage});
-		// TODO: Get Channels Messages	
-	}
-	setUser(activeUser){
-		this.setState({activeUser});
-		// TODO: Get User Messages	
+	// Message functions
+	addMessage(body){
+		let {messages, users} = this.state;
+		let createdAt = new Date;
+		let author = users.length > 0 ? users[0].name : 'anonymous';
+		messages.push({id: messages.length, body, createdAt, author});
+		this.setState({messages});
+		// TODO: Send to server
 	}
 	
 	render(){
@@ -55,17 +55,13 @@ class App extends Component{
 					/>
 					<UserSection
 						{...this.state}
-						addUser={this.addUser.bind(this)}
-						setUser={this.setUser.bind(this)}
+						setUserName={this.setUserName.bind(this)}
 					/>
 				</div>
-				<div className='messages-container'>
-					<MessageSection
-						{...this.state}
-						addMessage={this.addUser.bind(this)}
-						setMessage={this.setUser.bind(this)}
-					/>
-				</div>
+				<MessageSection
+					{...this.state}
+					addMessage={this.addMessage.bind(this)}
+				/>
 			</div>
 		)
 	}
